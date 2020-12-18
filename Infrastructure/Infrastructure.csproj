@@ -4,6 +4,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.0"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.0"/>
     <PackageReference Include="StackExchange.Redis" Version="2.2.4"/>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0"/>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.0"/>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.8.0"/>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.8.0"/>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj"/>
