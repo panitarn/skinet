@@ -13,9 +13,6 @@ export class LoadingInterceptor implements HttpInterceptor {
             this.busyService.busy();
         }
 
-        if(req.method === 'DELETE') {
-            return next.handle(req);
-        }
         
         return next.handle(req).pipe(
             delay(1000),

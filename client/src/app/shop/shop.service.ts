@@ -7,6 +7,7 @@ import { map} from 'rxjs/operators';
 import { ShopParams } from '../shared/models/shopParams';
 import { IProduct } from '../shared/models/product';
 import { of } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -56,7 +57,7 @@ export class ShopService {
 
     params = params.append('sort', this.shopParams.sort);
     params = params.append('pageIndex', this.shopParams.pageNumber.toString());
-    params = params.append('pageSize', this.shopParams.pageSize.toString());
+    params = params.append('pageIndex', this.shopParams.pageSize.toString());
     
 
     return this.http.get<IPagination>(this.baseUrl + 'products', {observe: 'response', params})
